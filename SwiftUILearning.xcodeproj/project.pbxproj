@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D518B4B22333DCE5005A28A0 /* DarkMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D518B4B12333DCE5005A28A0 /* DarkMode.swift */; };
 		D595ADC923328B730074FB54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D595ADC823328B730074FB54 /* AppDelegate.swift */; };
 		D595ADCB23328B730074FB54 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D595ADCA23328B730074FB54 /* SceneDelegate.swift */; };
 		D595ADCD23328B730074FB54 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D595ADCC23328B730074FB54 /* ContentView.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D518B4B12333DCE5005A28A0 /* DarkMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkMode.swift; sourceTree = "<group>"; };
 		D595ADC523328B730074FB54 /* SwiftUILearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUILearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D595ADC823328B730074FB54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D595ADCA23328B730074FB54 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,7 @@
 		D595ADD123328B770074FB54 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D595ADD423328B770074FB54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D595ADD623328B770074FB54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D595ADDC23328B880074FB54 /* SwiftUILearning.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftUILearning.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +40,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D518B4AE2333DCB5005A28A0 /* DarkMode */ = {
+			isa = PBXGroup;
+			children = (
+				D518B4B12333DCE5005A28A0 /* DarkMode.swift */,
+			);
+			name = DarkMode;
+			sourceTree = "<group>";
+		};
 		D595ADBC23328B730074FB54 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +67,8 @@
 		D595ADC723328B730074FB54 /* SwiftUILearning */ = {
 			isa = PBXGroup;
 			children = (
+				D518B4AE2333DCB5005A28A0 /* DarkMode */,
+				D595ADDC23328B880074FB54 /* SwiftUILearning.entitlements */,
 				D595ADC823328B730074FB54 /* AppDelegate.swift */,
 				D595ADCA23328B730074FB54 /* SceneDelegate.swift */,
 				D595ADCC23328B730074FB54 /* ContentView.swift */,
@@ -146,6 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D518B4B22333DCE5005A28A0 /* DarkMode.swift in Sources */,
 				D595ADC923328B730074FB54 /* AppDelegate.swift in Sources */,
 				D595ADCB23328B730074FB54 /* SceneDelegate.swift in Sources */,
 				D595ADCD23328B730074FB54 /* ContentView.swift in Sources */,
@@ -284,7 +298,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SwiftUILearning/SwiftUILearning.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUILearning/Preview Content\"";
 				DEVELOPMENT_TEAM = 52C6MCVHES;
 				ENABLE_PREVIEWS = YES;
@@ -295,6 +311,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.young40.SwiftUILearning;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -304,7 +321,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SwiftUILearning/SwiftUILearning.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUILearning/Preview Content\"";
 				DEVELOPMENT_TEAM = 52C6MCVHES;
 				ENABLE_PREVIEWS = YES;
@@ -315,6 +334,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.young40.SwiftUILearning;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
